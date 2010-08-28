@@ -1,0 +1,1 @@
+Didn't see the reason why _init() was private. Need to extend MongoSession and don't want to re-implement the _init() method.
