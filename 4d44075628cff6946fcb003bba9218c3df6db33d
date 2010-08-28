@@ -1,0 +1,11 @@
+read():
+- Query was using "$gte" which had to be "$lte"
+- We should not query for _id, instead we query for session_id (using the PHP generated session id's)
+- PHP generated session_id should not be used for _id
+
+write():
+- Using session_id instead of _id
+- Avoids Fatal Error
+
+delete():
+- Adjusting (_id => session_id)
